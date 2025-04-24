@@ -26,6 +26,7 @@ public class CardSearchService
         tasks.Add(SearchEclipseGames(encodedSearch));
         tasks.Add(SearchSwirlYEG(encodedSearch));
         tasks.Add(SearchHPWCards(encodedSearch));
+        tasks.Add(SearchPokeFam(encodedSearch));
 
         var results = await Task.WhenAll(tasks);
         return results.ToList();
@@ -78,6 +79,38 @@ public class CardSearchService
             return new SearchResult
             {
                 StoreName = "Eclipse Games",
+                ItemCount = products?.Count ?? 0,
+                StoreUrl = url
+            };
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error searching Eclipse Games");
+            return new SearchResult
+            {
+                StoreName = "Eclipse Games",
+                ItemCount = 0,
+                StoreUrl = url,
+                ErrorMessage = "Could not retrieve data from this store"
+            };
+        }
+    }
+    
+    private async Task<SearchResult> SearchPokeFam(string encodedSearch)
+    {
+        var url = $"https://pokefamco.com/search?q={encodedSearch}";
+        var client = _httpClientFactory.CreateClient();
+        
+        try
+        {
+            var html = await client.GetStringAsync(url);
+            var doc = new HtmlDocument();
+            doc.LoadHtml(html);
+
+            var products = doc.DocumentNode.SelectNodes("//span[@class='instock']");
+            return new SearchResult
+            {
+                StoreName = "PokeFam Co",
                 ItemCount = products?.Count ?? 0,
                 StoreUrl = url
             };

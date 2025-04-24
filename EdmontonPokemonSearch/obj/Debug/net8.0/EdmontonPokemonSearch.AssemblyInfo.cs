@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EdmontonPokemonSearch")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+796708c3fea13c593d4f79d24ce15a122c28e9f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("EdmontonPokemonSearch")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EdmontonPokemonSearch")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

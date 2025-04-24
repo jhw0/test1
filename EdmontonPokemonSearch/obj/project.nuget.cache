@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M8OzF1NF2HI=",
+  "dgSpecHash": "sbcfziXj+MQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\EdmontonPokemonSearch.csproj",
+  "projectFilePath": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\EdmontonPokemonSearch.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Home\\.nuget\\packages\\htmlagilitypack\\1.12.1\\htmlagilitypack.1.12.1.nupkg.sha512"
   ],

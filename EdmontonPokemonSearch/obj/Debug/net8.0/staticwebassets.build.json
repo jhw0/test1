@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cK4iJC7E520XHvEo1iZUak9lCCh91UvmWQZyHsClQI4=",
+  "Hash": "SVn4iBTFkVu3gPmKNN58SGY6uSpzVkbuGPRgPoutKNA=",
   "Source": "EdmontonPokemonSearch",
   "BasePath": "_content/EdmontonPokemonSearch",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "EdmontonPokemonSearch\\wwwroot",
       "Source": "EdmontonPokemonSearch",
-      "ContentRoot": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\wwwroot\\",
       "BasePath": "_content/EdmontonPokemonSearch",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\obj\\Debug\\net8.0\\scopedcss\\bundle\\EdmontonPokemonSearch.styles.css",
+      "Identity": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\obj\\Debug\\net8.0\\scopedcss\\bundle\\EdmontonPokemonSearch.styles.css",
       "SourceId": "EdmontonPokemonSearch",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/EdmontonPokemonSearch",
       "RelativePath": "EdmontonPokemonSearch.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\obj\\Debug\\net8.0\\scopedcss\\bundle\\EdmontonPokemonSearch.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\obj\\Debug\\net8.0\\scopedcss\\bundle\\EdmontonPokemonSearch.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EdmontonPokemonSearch.bundle.scp.css",
+      "Identity": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EdmontonPokemonSearch.bundle.scp.css",
       "SourceId": "EdmontonPokemonSearch",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/EdmontonPokemonSearch",
       "RelativePath": "EdmontonPokemonSearch.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EdmontonPokemonSearch.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EdmontonPokemonSearch.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\wwwroot\\app.css",
       "SourceId": "EdmontonPokemonSearch",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\wwwroot\\",
       "BasePath": "_content/EdmontonPokemonSearch",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "EdmontonPokemonSearch",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\wwwroot\\",
       "BasePath": "_content/EdmontonPokemonSearch",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "EdmontonPokemonSearch",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\wwwroot\\",
       "BasePath": "_content/EdmontonPokemonSearch",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\wwwroot\\favicon.png",
       "SourceId": "EdmontonPokemonSearch",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Home\\source\\repos\\EdmontonPokemonSearch\\EdmontonPokemonSearch\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Home\\source\\repos\\pkm-search\\EdmontonPokemonSearch\\wwwroot\\",
       "BasePath": "_content/EdmontonPokemonSearch",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
