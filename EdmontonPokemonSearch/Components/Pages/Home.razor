@@ -1,0 +1,93 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@using EdmontonPokemonSearch.Data
+@using EdmontonPokemonSearch.Models
+@inject CardSearchService SearchService
+
+<PageTitle>Edmonton Pokemon TCG Card Search</PageTitle>
+
+<h2>Edmonton Pokemon TCG Card Search</h2>
+
+<EditForm Model="@searchModel" OnValidSubmit="@HandleSearch">
+    <DataAnnotationsValidator />
+    <div class="input-display">
+        <div class="input-container">
+            <label for="input-card-name">Search for a Card:</label>
+            <InputText @bind-Value="searchModel.CardName" id="input-card-name" placeholder="Ex: Ralts" />
+            <ValidationMessage For="@(() => searchModel.CardName)" />
+        </div>
+        <div class="input-container">
+            <label for="input-collection-number">Collection Number:</label>
+            <InputText @bind-Value="searchModel.CollectionNumber" id="input-collection-number" placeholder="Ex: 027/091" />
+        </div>
+        <div class="input-container">
+            <label for="input-set-name">Set Name:</label>
+            <InputText @bind-Value="searchModel.SetName" id="input-set-name" placeholder="Ex: 'Paldean Fates'" />
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="search-btn" disabled="@isLoading">
+            @if (isLoading)
+            {
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                <span>Searching...</span>
+            }
+            else
+            {
+                <span>Search</span>
+            }
+        </button>
+    </div>
+</EditForm>
+
+@if (searchResults != null)
+{
+    <div class="results-container">
+        <h3>Search Results</h3>
+        @foreach (var result in searchResults)
+        {
+            <div class="store-result">
+                <h4>@result.StoreName</h4>
+                <p>Items found: @result.ItemCount</p>
+                <a href="@result.StoreUrl" target="_blank" class="btn btn-outline-primary">Visit Store</a>
+                @if (result.ErrorMessage != null)
+                {
+                    <div class="alert alert-warning mt-2">@result.ErrorMessage</div>
+                }
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private SearchModel searchModel = new();
+    private List<SearchResult>? searchResults;
+    private bool isLoading = false;
+
+    private async Task HandleSearch()
+    {
+        isLoading = true;
+        searchResults = null;
+        StateHasChanged(); // Force UI update to show loading state
+
+        try
+        {
+            searchResults = await SearchService.SearchAllStores(searchModel.CardName);
+        }
+        catch (Exception ex)
+        {
+            searchResults = new List<SearchResult>
+            {
+                new SearchResult
+                {
+                    StoreName = "Error",
+                    ItemCount = 0,
+                    ErrorMessage = $"An error occurred: {ex.Message}"
+                }
+            };
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+}
